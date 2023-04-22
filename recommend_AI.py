@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 import os
 
-shoes = pd.read_csv('./input/test.csv')
+shoes = pd.read_csv('./input/product.csv')
 # shoes.head(2)
 # shoes.shape
 # shoes.head()
