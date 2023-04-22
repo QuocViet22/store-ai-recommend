@@ -20,9 +20,8 @@ def respond():
     elif str(name).isdigit():
         response["ERROR"] = "The shoes's name can't be numeric. Please send a string."
     else:
-        print(recommend_AI.recommend(name))
-        # response["MESSAGE"] = str(recommend_AI.recommend({name}))
-        response["MESSAGE"] = recommend_AI.recommend(name)
+        # print(recommend_AI.recommend(name))
+        response["recommend products"] = recommend_AI.recommend(name)
         # Return the response in json format
         return jsonify(response)
 

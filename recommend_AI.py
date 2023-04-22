@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 import os
 
-shoes = pd.read_csv('./input/product.csv')
+shoes = pd.read_csv('./input/test.csv')
 # shoes.head(2)
 # shoes.shape
 # shoes.head()
@@ -29,7 +29,7 @@ def recommend(shoe):
     s = ""
     for i in distances[1:6]:
         s = s + str(new.iloc[i[0]].id) + ","
-        # print (new.iloc[i[0]].id)
+        print (new.iloc[i[0]].id)
     return s
 
 # print(recommend("Adidas NMD"))
