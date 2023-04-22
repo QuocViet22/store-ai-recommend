@@ -21,7 +21,7 @@ def respond():
         response["ERROR"] = "The shoes's name can't be numeric. Please send a string."
     else:
         # print(recommend_AI.recommend(name))
-        response["recommend products"] = recommend_AI.recommend(name)
+        response["recommend_products"] = recommend_AI.recommend(name)
         # Return the response in json format
         return jsonify(response)
 
